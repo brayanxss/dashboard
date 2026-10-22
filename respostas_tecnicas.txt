@@ -1,0 +1,5 @@
+Questão A — Fronteira de Bloqueio e Efeitos Colaterais
+CORS controla se o JavaScript de uma origem pode ler a resposta; não garante que a requisição não chegue ao servidor nem que seus efeitos sejam desfeitos. Por isso, uma rota que altera dados por uma requisição simples precisa de autenticação/autorização e proteção contra CSRF, independentemente do bloqueio de leitura imposto pelo navegador.
+
+Questão B — Razão de Existência Histórica do Preflight (OPTIONS)
+O preflight permite ao servidor declarar previamente quais métodos e cabeçalhos não simples aceita, antes de o navegador enviar a requisição principal. GET e POST com tipos de conteúdo e cabeçalhos compatíveis com formulários HTML clássicos não exigem preflight, preservando compatibilidade com servidores legados que já podiam receber essas requisições antes do CORS.
